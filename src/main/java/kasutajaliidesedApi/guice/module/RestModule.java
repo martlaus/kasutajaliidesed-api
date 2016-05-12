@@ -6,7 +6,6 @@ import kasutajaliidesedApi.service.AuthenticatedUserService;
 import kasutajaliidesedApi.service.JokeService;
 import kasutajaliidesedApi.service.UserService;
 import kasutajaliidesedApi.service.VoteService;
-import org.glassfish.jersey.media.multipart.MultiPartFeature;
 
 
 @GuiceInjector.Module

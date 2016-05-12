@@ -1631,3 +1631,239 @@ java.lang.RuntimeException: Unable to log in - wrong user info or the user is no
 2016-05-12 10:03:54.163 [qtp1975873209-18] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
 2016-05-12 10:03:54.665 [qtp1975873209-18] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
 2016-05-12 10:03:55.056 [qtp1975873209-18] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@55c5e46c [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@da7e6f13 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9g19fxw9sk4tb9h|302410be, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@970aac67 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19fxw9sk4tb9h|73563bcd, jdbcUrl -> jdbc:mysql://127.0.0.1/kasutajaliidesedApi, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19fxw9sk4tb9h|10baf561, numHelperThreads -> 3 ]
+2016-05-12 10:23:04.508 [shutdown-hook] INFO  kasutajaliidesedApi.ApplicationLauncher  - Stopping server...
+2016-05-12 10:23:04.553 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@36fcf6c0{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:23:04.603 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@7dff6d05{/,null,UNAVAILABLE}
+2016-05-12 10:23:45.469 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:23:47.709 [main] INFO  org.reflections.Reflections  - Reflections took 1597 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:23:48.026 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:23:51.191 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:23:51.513 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:23:51.593 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:23:51.618 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:23:51.858 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @9042ms
+2016-05-12 10:23:52.515 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:23:53.347 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  - FAILED o.e.j.s.ServletContextHandler@1ecee32c{/,null,STARTING}: java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.<clinit>(ServiceLocatorImpl.java:122)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.initialize(ServiceLocatorGeneratorImpl.java:66)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.create(ServiceLocatorGeneratorImpl.java:98)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.internalCreate(ServiceLocatorFactoryImpl.java:265)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.create(ServiceLocatorFactoryImpl.java:225)
+	at org.glassfish.jersey.internal.inject.Injections._createLocator(Injections.java:138)
+	at org.glassfish.jersey.internal.inject.Injections.createLocator(Injections.java:123)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:308)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:338)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:171)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:363)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:612)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:395)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:298)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at kasutajaliidesedApi.server.EmbeddedJetty.start(EmbeddedJetty.java:39)
+	at kasutajaliidesedApi.ApplicationLauncher.startServer(ApplicationLauncher.java:58)
+	at kasutajaliidesedApi.ApplicationLauncher.startApplication(ApplicationLauncher.java:32)
+	at kasutajaliidesedApi.ApplicationLauncher.main(ApplicationLauncher.java:81)
+2016-05-12 10:23:53.509 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@404557a1{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:23:53.510 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  - FAILED org.eclipse.jetty.server.Server@6622fc65: java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.<clinit>(ServiceLocatorImpl.java:122)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.initialize(ServiceLocatorGeneratorImpl.java:66)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.create(ServiceLocatorGeneratorImpl.java:98)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.internalCreate(ServiceLocatorFactoryImpl.java:265)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.create(ServiceLocatorFactoryImpl.java:225)
+	at org.glassfish.jersey.internal.inject.Injections._createLocator(Injections.java:138)
+	at org.glassfish.jersey.internal.inject.Injections.createLocator(Injections.java:123)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:308)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:338)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:171)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:363)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:612)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:395)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:298)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at kasutajaliidesedApi.server.EmbeddedJetty.start(EmbeddedJetty.java:39)
+	at kasutajaliidesedApi.ApplicationLauncher.startServer(ApplicationLauncher.java:58)
+	at kasutajaliidesedApi.ApplicationLauncher.startApplication(ApplicationLauncher.java:32)
+	at kasutajaliidesedApi.ApplicationLauncher.main(ApplicationLauncher.java:81)
+2016-05-12 10:24:25.055 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:24:26.328 [main] INFO  org.reflections.Reflections  - Reflections took 701 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:24:26.496 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:24:28.457 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:24:28.715 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:24:28.746 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:24:28.759 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:24:28.833 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @5539ms
+2016-05-12 10:24:29.244 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:24:29.849 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  - FAILED o.e.j.s.ServletContextHandler@1ecee32c{/,null,STARTING}: java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.<clinit>(ServiceLocatorImpl.java:122)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.initialize(ServiceLocatorGeneratorImpl.java:66)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.create(ServiceLocatorGeneratorImpl.java:98)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.internalCreate(ServiceLocatorFactoryImpl.java:265)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.create(ServiceLocatorFactoryImpl.java:225)
+	at org.glassfish.jersey.internal.inject.Injections._createLocator(Injections.java:138)
+	at org.glassfish.jersey.internal.inject.Injections.createLocator(Injections.java:123)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:308)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:338)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:171)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:363)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:612)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:395)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:298)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at kasutajaliidesedApi.server.EmbeddedJetty.start(EmbeddedJetty.java:39)
+	at kasutajaliidesedApi.ApplicationLauncher.startServer(ApplicationLauncher.java:58)
+	at kasutajaliidesedApi.ApplicationLauncher.startApplication(ApplicationLauncher.java:32)
+	at kasutajaliidesedApi.ApplicationLauncher.main(ApplicationLauncher.java:81)
+2016-05-12 10:24:29.906 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@1c6aa4b5{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:24:29.919 [main] WARN  org.eclipse.jetty.util.component.AbstractLifeCycle  - FAILED org.eclipse.jetty.server.Server@6622fc65: java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilities.getSystemProperty(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+	at org.jvnet.hk2.internal.ServiceLocatorImpl.<clinit>(ServiceLocatorImpl.java:122)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.initialize(ServiceLocatorGeneratorImpl.java:66)
+	at org.jvnet.hk2.external.generator.ServiceLocatorGeneratorImpl.create(ServiceLocatorGeneratorImpl.java:98)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.internalCreate(ServiceLocatorFactoryImpl.java:265)
+	at org.glassfish.hk2.internal.ServiceLocatorFactoryImpl.create(ServiceLocatorFactoryImpl.java:225)
+	at org.glassfish.jersey.internal.inject.Injections._createLocator(Injections.java:138)
+	at org.glassfish.jersey.internal.inject.Injections.createLocator(Injections.java:123)
+	at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:308)
+	at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:338)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:171)
+	at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:363)
+	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:612)
+	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:395)
+	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:871)
+	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:298)
+	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:741)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:132)
+	at org.eclipse.jetty.server.Server.start(Server.java:387)
+	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:114)
+	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:61)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:354)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at kasutajaliidesedApi.server.EmbeddedJetty.start(EmbeddedJetty.java:39)
+	at kasutajaliidesedApi.ApplicationLauncher.startServer(ApplicationLauncher.java:58)
+	at kasutajaliidesedApi.ApplicationLauncher.startApplication(ApplicationLauncher.java:32)
+	at kasutajaliidesedApi.ApplicationLauncher.main(ApplicationLauncher.java:81)
+2016-05-12 10:25:15.662 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:25:16.451 [main] INFO  org.reflections.Reflections  - Reflections took 536 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:25:16.580 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:25:18.088 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:25:18.251 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:25:18.300 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:25:18.318 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:25:18.437 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4147ms
+2016-05-12 10:25:18.947 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:25:25.828 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@36361ddb{/,null,AVAILABLE}
+2016-05-12 10:25:25.935 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@6cd6cf64{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:25:25.940 [main] INFO  org.eclipse.jetty.server.Server  - Started @11655ms
+2016-05-12 10:25:25.953 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [9999]
+2016-05-12 10:25:34.707 [qtp1975873209-18] INFO  kasutajaliidesedApi.guice.provider.EntityManagerFactoryProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=validate, hibernate.c3p0.initialpoolsize=5, hibernate.c3p0.max_size=100, hibernate.c3p0.max_statements=50, hibernate.c3p0.idle_test_period=400, hibernate.c3p0.preferredTestQuery=SELECT 1, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, hibernate.connection.password=root, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://127.0.0.1/kasutajaliidesedApi, hibernate.c3p0.timeout=300, hibernate.c3p0.testConnectionOnCheckin=true, hibernate.show_sql=false, hibernate.c3p0.acquire_increment=1}]
+2016-05-12 10:25:38.435 [qtp1975873209-18] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2016-05-12 10:25:39.219 [qtp1975873209-18] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-12 10:25:39.821 [qtp1975873209-18] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@90516b0e [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@3cca7b17 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9g19gpuq11qa81vm|11f9563d, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@235429b3 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19gpuq11qa81vm|2189a9b3, jdbcUrl -> jdbc:mysql://127.0.0.1/kasutajaliidesedApi, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19gpuq11qa81vm|402f0020, numHelperThreads -> 3 ]
+2016-05-12 10:43:33.505 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@6cd6cf64{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:43:33.528 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@36361ddb{/,null,UNAVAILABLE}
+2016-05-12 10:45:01.564 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:45:02.546 [main] INFO  org.reflections.Reflections  - Reflections took 694 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:45:07.493 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:45:09.296 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:45:09.393 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:45:09.419 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:45:09.428 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:45:09.482 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @9556ms
+2016-05-12 10:45:09.715 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:45:12.666 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@432034a{/,null,AVAILABLE}
+2016-05-12 10:45:12.750 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@1693e902{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:45:12.751 [main] INFO  org.eclipse.jetty.server.Server  - Started @12829ms
+2016-05-12 10:45:12.756 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [9999]
+2016-05-12 10:45:41.417 [qtp1261198850-18] INFO  kasutajaliidesedApi.guice.provider.EntityManagerFactoryProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=validate, hibernate.c3p0.initialpoolsize=5, hibernate.c3p0.max_size=100, hibernate.c3p0.max_statements=50, hibernate.c3p0.idle_test_period=400, hibernate.c3p0.preferredTestQuery=SELECT 1, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, hibernate.connection.password=root, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://127.0.0.1/kasutajaliidesedApi, hibernate.c3p0.timeout=300, hibernate.c3p0.testConnectionOnCheckin=true, hibernate.show_sql=false, hibernate.c3p0.acquire_increment=1}]
+2016-05-12 10:45:44.748 [qtp1261198850-18] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2016-05-12 10:45:45.376 [qtp1261198850-18] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-12 10:45:45.872 [qtp1261198850-18] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@bb46a4f9 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@137cdb32 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9g19hfpgw1m2f95y|75448181, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@cb7e35a [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19hfpgw1m2f95y|387a48c8, jdbcUrl -> jdbc:mysql://127.0.0.1/kasutajaliidesedApi, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19hfpgw1m2f95y|59da1625, numHelperThreads -> 3 ]
+2016-05-12 10:48:36.118 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@1693e902{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:48:36.138 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@432034a{/,null,UNAVAILABLE}
+2016-05-12 10:49:21.505 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:49:22.502 [main] INFO  org.reflections.Reflections  - Reflections took 633 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:49:22.636 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:49:24.051 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:49:24.176 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:49:24.203 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:49:24.211 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:49:24.268 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @3826ms
+2016-05-12 10:49:24.492 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:49:27.719 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@432034a{/,null,AVAILABLE}
+2016-05-12 10:49:27.758 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@77432db6{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:49:27.759 [main] INFO  org.eclipse.jetty.server.Server  - Started @7321ms
+2016-05-12 10:49:27.764 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [9999]
+2016-05-12 10:49:47.016 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@77432db6{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:49:47.041 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@432034a{/,null,UNAVAILABLE}
+2016-05-12 10:49:53.621 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:49:54.754 [main] INFO  org.reflections.Reflections  - Reflections took 817 ms to scan 1 urls, producing 23 keys and 56 values 
+2016-05-12 10:49:54.824 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 3 modules loaded.
+2016-05-12 10:49:57.003 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - No custom configuration file set.
+2016-05-12 10:49:57.139 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/classes/default.properties]
+2016-05-12 10:49:57.180 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 10:49:57.189 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 8875
+2016-05-12 10:49:57.319 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @4784ms
+2016-05-12 10:49:58.040 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:50:02.691 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@55cff952{/,null,AVAILABLE}
+2016-05-12 10:50:02.721 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@23e44287{HTTP/1.1}{0.0.0.0:8875}
+2016-05-12 10:50:02.722 [main] INFO  org.eclipse.jetty.server.Server  - Started @10193ms
+2016-05-12 10:50:02.730 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [9999]
+2016-05-12 10:50:10.144 [qtp1261198850-18] INFO  kasutajaliidesedApi.guice.provider.EntityManagerFactoryProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=com.mysql.jdbc.Driver, hibernate.hbm2ddl.auto=validate, hibernate.c3p0.initialpoolsize=5, hibernate.c3p0.max_size=100, hibernate.c3p0.max_statements=50, hibernate.c3p0.idle_test_period=400, hibernate.c3p0.preferredTestQuery=SELECT 1, hibernate.dialect=org.hibernate.dialect.MySQLDialect, hibernate.c3p0.min_size=5, hibernate.connection.password=root, hibernate.connection.username=root, hibernate.connection.url=jdbc:mysql://127.0.0.1/kasutajaliidesedApi, hibernate.c3p0.timeout=300, hibernate.c3p0.testConnectionOnCheckin=true, hibernate.show_sql=false, hibernate.c3p0.acquire_increment=1}]
+2016-05-12 10:50:11.904 [qtp1261198850-18] INFO  com.mchange.v2.log.MLog  - MLog clients using log4j logging.
+2016-05-12 10:50:12.296 [qtp1261198850-18] INFO  com.mchange.v2.c3p0.C3P0Registry  - Initializing c3p0-0.9.2.1 [built 20-March-2013 10:47:27 +0000; debug? true; trace: 10]
+2016-05-12 10:50:12.642 [qtp1261198850-18] INFO  com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource  - Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@848e5150 [ connectionPoolDataSource -> com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@d73e3c63 [ acquireIncrement -> 1, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, debugUnreturnedConnectionStackTraces -> false, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, identityToken -> z8kfsx9g19hlfkvtxv954|383717b2, idleConnectionTestPeriod -> 400, initialPoolSize -> 5, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 300, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 50, maxStatementsPerConnection -> 0, minPoolSize -> 5, nestedDataSource -> com.mchange.v2.c3p0.DriverManagerDataSource@fc79ceb6 [ description -> null, driverClass -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19hlfkvtxv954|b90b461, jdbcUrl -> jdbc:mysql://127.0.0.1/kasutajaliidesedApi, properties -> {user=******, password=******} ], preferredTestQuery -> SELECT 1, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> true, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, usesTraditionalReflectiveProxies -> false; userOverrides: {} ], dataSourceName -> null, factoryClassLocation -> null, identityToken -> z8kfsx9g19hlfkvtxv954|75c67da5, numHelperThreads -> 3 ]
+2016-05-12 10:55:19.037 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 10:55:19.284 [main] INFO  org.reflections.Reflections  - Reflections took 158 ms to scan 2 urls, producing 29 keys and 85 values 
+2016-05-12 10:55:19.318 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 5 modules loaded.
+2016-05-12 10:55:20.055 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2016-05-12 10:55:20.154 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/test-classes/test.properties]
+2016-05-12 10:55:20.168 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 10:55:20.228 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @3531ms
+2016-05-12 10:55:20.385 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:55:22.279 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@28c0b664{/,null,AVAILABLE}
+2016-05-12 10:55:22.327 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@6d0e7d2b{HTTP/1.1}{0.0.0.0:43031}
+2016-05-12 10:55:22.330 [main] INFO  org.eclipse.jetty.server.Server  - Started @5637ms
+2016-05-12 10:55:22.337 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@6d0e7d2b{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 10:55:22.347 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@28c0b664{/,null,UNAVAILABLE}
+2016-05-12 10:55:22.353 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 10:55:22.356 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 10:55:22.871 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@240139e1{/,null,AVAILABLE}
+2016-05-12 10:55:22.874 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@7ea4d397{HTTP/1.1}{0.0.0.0:46448}
+2016-05-12 10:55:22.877 [main] INFO  org.eclipse.jetty.server.Server  - Started @6183ms
+2016-05-12 10:55:22.880 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@7ea4d397{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 10:55:22.888 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@240139e1{/,null,UNAVAILABLE}
+2016-05-12 10:55:22.899 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem9049007402796846109.kasutajaliidesedApi
+2016-05-12 10:55:22.901 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
+2016-05-12 10:55:22.901 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.

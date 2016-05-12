@@ -707,3 +707,103 @@ INSERT INTO Vote (id, user_id, joke_id, isUpvote) VALUES (1, 1, 1, TRUE) [23506-
 2016-05-12 10:03:59.333 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
 2016-05-12 10:03:59.333 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
 2016-05-12 10:04:00.178 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_
+2016-05-12 10:25:34.841 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:25:34.842 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:25:34.843 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:25:35.370 [qtp1975873209-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 10:25:36.038 [qtp1975873209-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 10:25:36.065 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 10:25:36.084 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 10:25:37.666 [qtp1975873209-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 10:25:38.104 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 10:25:38.105 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 10:25:38.125 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 10:25:41.465 [qtp1975873209-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 10:25:41.504 [qtp1975873209-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 10:25:42.206 [qtp1975873209-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 10:25:43.712 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 10:25:43.712 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 10:25:43.766 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 10:25:43.766 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 10:25:43.778 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 10:25:43.778 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 10:25:43.788 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 10:25:43.789 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 10:25:43.803 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 10:25:43.803 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 10:25:43.814 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 10:25:43.814 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 10:25:43.831 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 10:25:43.831 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 10:25:43.844 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 10:25:43.845 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 10:25:44.572 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_
+2016-05-12 10:45:41.600 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:45:41.601 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:45:41.602 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:45:42.684 [qtp1261198850-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 10:45:43.262 [qtp1261198850-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 10:45:43.269 [qtp1261198850-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 10:45:43.279 [qtp1261198850-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 10:45:44.390 [qtp1261198850-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 10:45:44.622 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 10:45:44.623 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 10:45:44.624 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 10:45:47.796 [qtp1261198850-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 10:45:47.927 [qtp1261198850-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 10:45:49.167 [qtp1261198850-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 10:45:50.144 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 10:45:50.145 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 10:45:50.206 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 10:45:50.206 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 10:45:50.222 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 10:45:50.222 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 10:45:50.234 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 10:45:50.234 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 10:45:50.253 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 10:45:50.253 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 10:45:50.274 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 10:45:50.274 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 10:45:50.290 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 10:45:50.290 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 10:45:50.301 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 10:45:50.301 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 10:45:51.805 [qtp1261198850-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_
+2016-05-12 10:45:59.583 [qtp1261198850-22] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_
+2016-05-12 10:50:10.310 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:50:10.311 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:50:10.311 [qtp1261198850-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 10:50:10.787 [qtp1261198850-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 10:50:11.197 [qtp1261198850-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 10:50:11.204 [qtp1261198850-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 10:50:11.209 [qtp1261198850-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 10:50:11.746 [qtp1261198850-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 10:50:11.863 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 10:50:11.863 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 10:50:11.864 [qtp1261198850-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 10:50:13.798 [qtp1261198850-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 10:50:13.826 [qtp1261198850-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 10:50:14.436 [qtp1261198850-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 10:50:15.762 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 10:50:15.763 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 10:50:15.816 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 10:50:15.816 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 10:50:15.829 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 10:50:15.829 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 10:50:15.845 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 10:50:15.845 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 10:50:15.857 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 10:50:15.857 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 10:50:15.866 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 10:50:15.866 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 10:50:15.877 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 10:50:15.877 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 10:50:15.888 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 10:50:15.889 [qtp1261198850-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 10:50:17.018 [qtp1261198850-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_

@@ -4,7 +4,6 @@ import kasutajaliidesedApi.guice.GuiceInjector;
 import kasutajaliidesedApi.guice.provider.ObjectMapperProvider;
 import org.glassfish.hk2.api.ServiceLocator;
 import org.glassfish.jersey.jackson.JacksonFeature;
-import org.glassfish.jersey.media.multipart.MultiPartFeature;
 import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.server.filter.RolesAllowedDynamicFeature;
 import org.jvnet.hk2.guice.bridge.api.GuiceBridge;
@@ -27,7 +26,6 @@ public class KasutajaliidesedApiApplication extends ResourceConfig {
         register(JacksonFeature.class);
         register(ObjectMapperProvider.class);
         register(RolesAllowedDynamicFeature.class);
-        register(MultiPartFeature.class);
 
     }
 }
