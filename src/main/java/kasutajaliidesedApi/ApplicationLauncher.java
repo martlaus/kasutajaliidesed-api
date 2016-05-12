@@ -17,7 +17,7 @@ public class ApplicationLauncher {
 
 //    private static final Logger logger = LoggerFactory.getLogger(ApplicationLauncher.class);
 
-    private static final int DEFAULT_SERVER_PORT = 8875;
+    private static final int DEFAULT_SERVER_PORT = 8876;
 
     @Inject
     private static Configuration configuration;

@@ -1867,3 +1867,26 @@ java.lang.NoSuchMethodError: org.glassfish.hk2.utilities.general.GeneralUtilitie
 2016-05-12 10:55:22.899 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem9049007402796846109.kasutajaliidesedApi
 2016-05-12 10:55:22.901 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
 2016-05-12 10:55:22.901 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
+2016-05-12 11:08:32.034 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 11:08:32.264 [main] INFO  org.reflections.Reflections  - Reflections took 136 ms to scan 2 urls, producing 29 keys and 85 values 
+2016-05-12 11:08:32.309 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 5 modules loaded.
+2016-05-12 11:08:33.028 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2016-05-12 11:08:33.130 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/test-classes/test.properties]
+2016-05-12 11:08:33.142 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 11:08:33.195 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @3447ms
+2016-05-12 11:08:33.347 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 11:08:35.276 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@28c0b664{/,null,AVAILABLE}
+2016-05-12 11:08:35.325 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@428b4985{HTTP/1.1}{0.0.0.0:60865}
+2016-05-12 11:08:35.327 [main] INFO  org.eclipse.jetty.server.Server  - Started @5581ms
+2016-05-12 11:08:35.338 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@428b4985{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 11:08:35.351 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@28c0b664{/,null,UNAVAILABLE}
+2016-05-12 11:08:35.358 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 11:08:35.360 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 11:08:35.779 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@240139e1{/,null,AVAILABLE}
+2016-05-12 11:08:35.784 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@7d5292a2{HTTP/1.1}{0.0.0.0:49183}
+2016-05-12 11:08:35.788 [main] INFO  org.eclipse.jetty.server.Server  - Started @6039ms
+2016-05-12 11:08:35.791 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@7d5292a2{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 11:08:35.799 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@240139e1{/,null,UNAVAILABLE}
+2016-05-12 11:08:35.816 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem2232089607586957929.kasutajaliidesedApi
+2016-05-12 11:08:35.817 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
+2016-05-12 11:08:35.818 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
