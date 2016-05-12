@@ -1,60 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab6af3b0-67b2-4310-86a2-8e384d81cb78" name="Default" comment="cleanup">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/dao/AuthenticatedUserDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/dao/HomeworkDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/dao/JokeDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/dao/UserDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/dao/VoteDAOTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/HomeworkResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/JokeResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/LoginResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/LogoutResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/UserResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/VoteResourceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/rest/filter/SecurityFilterTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/kasutajaliidesedApi/service/HomeworkServiceTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/dao/AuthenticatedUserDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/dao/HomeworkDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/dao/JokeDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/dao/UserDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/dao/VoteDAOTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/HomeworkResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/HomeworkResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/HomeworkResourceTest$LoggedInUserFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/HomeworkResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest$LoggedInUserFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/JokeResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/LoginResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/LoginResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/LogoutResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/LogoutResourceTest$LoggedInUserFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/LogoutResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/UserResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/UserResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest$LoggedInUserFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/VoteResourceTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/filter/SecurityFilterTest$SecurityFilterMock.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/rest/filter/SecurityFilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kasutajaliidesedApi/service/HomeworkServiceTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/kasutajaliidesedApi/ApplicationLauncher.class" afterPath="$PROJECT_DIR$/target/classes/kasutajaliidesedApi/ApplicationLauncher.class" />
+    <list default="true" id="ab6af3b0-67b2-4310-86a2-8e384d81cb78" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_12.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_12.xml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/hibernate.log" afterPath="$PROJECT_DIR$/logs/hibernate.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/jokeOfTheDay.log" afterPath="$PROJECT_DIR$/logs/jokeOfTheDay.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kasutajaliidesedApi.iml" afterPath="$PROJECT_DIR$/kasutajaliidesedApi.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jokeOfTheDay.iws" />
@@ -113,27 +66,27 @@
       <file leaf-file-name="ApplicationLauncher.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/ApplicationLauncher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.6551723">
-              <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="21" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.4827585">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.4864865">
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.62460566">
+            <state vertical-scroll-proportion="0.0">
               <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
               <folding />
             </state>
@@ -157,7 +110,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/rest/filter/SecurityFilter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+              <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -249,8 +202,8 @@
         <option value="$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/service/HomeworkService.java" />
         <option value="$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/rest/HomeworkResource.java" />
         <option value="$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/ApplicationLauncher.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -930,6 +883,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="FullScreen" value="false" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RunManager" selected="JUnit.All in kasutajaliidesedApi">
     <configuration default="false" name="All in kasutajaliidesedApi" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -1252,7 +1206,7 @@
       <option name="number" value="Default" />
       <updated>1462951386743</updated>
       <workItem from="1462951386945" duration="11689000" />
-      <workItem from="1462971668337" duration="28158000" />
+      <workItem from="1462971668337" duration="30344000" />
     </task>
     <task id="LOCAL-00001" summary="names&amp;ports">
       <created>1463028242295</created>
@@ -1260,15 +1214,21 @@
       <option name="project" value="LOCAL" />
       <updated>1463028242295</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="cleanup">
+      <created>1463028531587</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1463028531587</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39847000" />
+    <option name="totallyTimeSpent" value="42033000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1279,13 +1239,13 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49691358" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.49691358" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287037" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.46450618" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46450618" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Sequence" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20454545" sideWeight="0.50843376" order="2" side_tool="true" content_ui="tabs" />
@@ -1349,7 +1309,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="names&amp;ports" />
-    <option name="LAST_COMMIT_MESSAGE" value="names&amp;ports" />
+    <MESSAGE value="cleanup" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1371,12 +1332,6 @@
           <line>35</line>
           <properties />
           <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/rest/filter/SecurityFilter.java</url>
-          <line>35</line>
-          <properties />
-          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
       <option name="time" value="23" />
@@ -1624,7 +1579,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1686,7 +1641,7 @@
         <state vertical-scroll-proportion="0.27364865">
           <caret line="35" column="15" selection-start-line="35" selection-start-column="15" selection-end-line="35" selection-end-column="15" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1741,8 +1696,8 @@
         <state vertical-scroll-proportion="0.4368932">
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#584#585#0" expanded="true" />
+            <element signature="e#534#535#0" expanded="false" />
+            <element signature="e#584#585#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1751,14 +1706,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="148" column="0" selection-start-line="148" selection-start-column="0" selection-end-line="148" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/rest/filter/SecurityFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1797,26 +1744,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/rest/filter/SecurityFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="26" selection-start-line="42" selection-start-column="26" selection-end-line="42" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kasutajaliidesedApi/ApplicationLauncher.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.6551723">
-          <caret line="19" column="55" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="21" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4827585">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.62460566">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.4864865">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
