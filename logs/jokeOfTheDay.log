@@ -1026,3 +1026,545 @@ Caused by: java.lang.IllegalStateException: ServiceLocatorImpl(__HK2_Generated_0
 2016-05-12 01:06:05.116 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@1aac188d{HTTP/1.1}{0.0.0.0:8080}
 2016-05-12 01:06:05.118 [main] INFO  org.eclipse.jetty.server.Server  - Started @9044ms
 2016-05-12 01:06:05.125 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [9999]
+2016-05-12 07:45:24.633 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 07:45:26.480 [main] INFO  org.reflections.Reflections  - Reflections took 1444 ms to scan 2 urls, producing 34 keys and 125 values 
+2016-05-12 07:45:26.912 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 5 modules loaded.
+2016-05-12 07:45:29.714 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2016-05-12 07:45:30.074 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/test-classes/test.properties]
+2016-05-12 07:45:30.886 [main] INFO  kasutajaliidesedApi.guice.provider.EntityManagerFactoryTestProvider  - Initializing EntityManagerFactory properties [{hibernate.connection.driver_class=org.h2.Driver, hibernate.hbm2ddl.auto=create, hibernate.connection.url=jdbc:h2:mem:test;MODE=MySQL, hibernate.dialect=org.hibernate.dialect.H2Dialect, hibernate.show_sql=true}]
+2016-05-12 07:45:45.343 [main] INFO  kasutajaliidesedApi.ApplicationManager  - Application is not running.
+2016-05-12 07:45:45.344 [main] INFO  kasutajaliidesedApi.ApplicationLauncher  - Starting application server on port [1986]
+2016-05-12 07:45:45.364 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 1986
+2016-05-12 07:45:45.557 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @26138ms
+2016-05-12 07:45:46.502 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:45:55.445 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@9c73fff{/,null,AVAILABLE}
+2016-05-12 07:45:55.509 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@d919544{HTTP/1.1}{0.0.0.0:1986}
+2016-05-12 07:45:55.510 [main] INFO  org.eclipse.jetty.server.Server  - Started @36105ms
+2016-05-12 07:45:55.523 [command-listener] INFO  kasutajaliidesedApi.ApplicationManager  - Command listener started on port [1987]
+2016-05-12 07:46:00.332 [qtp1293389141-19] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:01.504 [qtp1293389141-21] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:02.393 [qtp1293389141-23] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:02.723 [qtp1293389141-19] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:03.158 [qtp1293389141-20] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:03.778 [qtp1293389141-21] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:05.591 [qtp1293389141-23] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Exception when persisting user.
+	at kasutajaliidesedApi.dao.UserDAO.saveUser(UserDAO.java:32)
+	at kasutajaliidesedApi.service.UserService.saveUser(UserService.java:37)
+	at kasutajaliidesedApi.rest.UserResource.addUser(UserResource.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:05.843 [qtp1293389141-19] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:06.257 [qtp1293389141-20] ERROR kasutajaliidesedApi.rest.errorhandling.GenericExceptionMapper  - Handling error
+java.lang.RuntimeException: Unable to log in - wrong user info or the user is not registered
+	at kasutajaliidesedApi.rest.LoginResource.login(LoginResource.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.glassfish.jersey.server.model.internal.ResourceMethodInvocationHandlerFactory$1.invoke(ResourceMethodInvocationHandlerFactory.java:81)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher$1.run(AbstractJavaResourceMethodDispatcher.java:144)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.invoke(AbstractJavaResourceMethodDispatcher.java:161)
+	at org.glassfish.jersey.server.model.internal.JavaResourceMethodDispatcherProvider$TypeOutInvoker.doDispatch(JavaResourceMethodDispatcherProvider.java:205)
+	at org.glassfish.jersey.server.model.internal.AbstractJavaResourceMethodDispatcher.dispatch(AbstractJavaResourceMethodDispatcher.java:99)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.invoke(ResourceMethodInvoker.java:389)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:347)
+	at org.glassfish.jersey.server.model.ResourceMethodInvoker.apply(ResourceMethodInvoker.java:102)
+	at org.glassfish.jersey.server.ServerRuntime$2.run(ServerRuntime.java:309)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:271)
+	at org.glassfish.jersey.internal.Errors$1.call(Errors.java:267)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+	at org.glassfish.jersey.internal.Errors.process(Errors.java:267)
+	at org.glassfish.jersey.process.internal.RequestScope.runInScope(RequestScope.java:317)
+	at org.glassfish.jersey.server.ServerRuntime.process(ServerRuntime.java:292)
+	at org.glassfish.jersey.server.ApplicationHandler.handle(ApplicationHandler.java:1139)
+	at org.glassfish.jersey.servlet.WebComponent.service(WebComponent.java:460)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:386)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:334)
+	at org.glassfish.jersey.servlet.ServletContainer.service(ServletContainer.java:221)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:808)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1669)
+	at com.google.inject.servlet.FilterChainInvocation.doFilter(FilterChainInvocation.java:89)
+	at com.google.inject.servlet.ManagedFilterPipeline.dispatch(ManagedFilterPipeline.java:119)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:133)
+	at com.google.inject.servlet.GuiceFilter$1.call(GuiceFilter.java:130)
+	at com.google.inject.servlet.GuiceFilter$Context.call(GuiceFilter.java:203)
+	at com.google.inject.servlet.GuiceFilter.doFilter(GuiceFilter.java:130)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1652)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:585)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1127)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:515)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1061)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:97)
+	at org.eclipse.jetty.server.Server.handle(Server.java:497)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:310)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:257)
+	at org.eclipse.jetty.io.AbstractConnection$2.run(AbstractConnection.java:540)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:635)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:555)
+	at java.lang.Thread.run(Thread.java:745)
+2016-05-12 07:46:08.505 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@d919544{HTTP/1.1}{0.0.0.0:1986}
+2016-05-12 07:46:08.604 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@9c73fff{/,null,UNAVAILABLE}
+2016-05-12 07:46:08.612 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:46:08.621 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:46:09.848 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@2abc55c4{/,null,AVAILABLE}
+2016-05-12 07:46:09.867 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@7e52d83c{HTTP/1.1}{0.0.0.0:39498}
+2016-05-12 07:46:09.868 [main] INFO  org.eclipse.jetty.server.Server  - Started @50463ms
+2016-05-12 07:46:09.892 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@7e52d83c{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:46:09.897 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@2abc55c4{/,null,UNAVAILABLE}
+2016-05-12 07:46:09.933 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:46:09.940 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:46:11.151 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@6c07add6{/,null,AVAILABLE}
+2016-05-12 07:46:11.160 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@760549c6{HTTP/1.1}{0.0.0.0:39243}
+2016-05-12 07:46:11.161 [main] INFO  org.eclipse.jetty.server.Server  - Started @51757ms
+2016-05-12 07:46:11.186 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@760549c6{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:46:11.191 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@6c07add6{/,null,UNAVAILABLE}
+2016-05-12 07:46:11.226 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 1986
+2016-05-12 07:46:11.229 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:46:12.434 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@6a7a1a0d{/,null,AVAILABLE}
+2016-05-12 07:46:12.447 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@40924813{HTTP/1.1}{0.0.0.0:1986}
+2016-05-12 07:46:12.448 [main] INFO  org.eclipse.jetty.server.Server  - Started @53044ms
+2016-05-12 07:46:13.897 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem3210553285086740408.kasutajaliidesedApi
+2016-05-12 07:46:13.899 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
+2016-05-12 07:46:13.902 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
+2016-05-12 07:46:14.006 [Thread-12] INFO  kasutajaliidesedApi.ApplicationManager  - Stopping application on port [1987]
+2016-05-12 07:46:14.028 [Thread-12] INFO  kasutajaliidesedApi.ApplicationManager  - Stop command sent to application
+2016-05-12 07:46:13.990 [shutdown-hook] INFO  kasutajaliidesedApi.ApplicationLauncher  - Stopping server...
+2016-05-12 07:46:14.056 [shutdown-hook] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@40924813{HTTP/1.1}{0.0.0.0:1986}
+2016-05-12 07:46:14.085 [shutdown-hook] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@6a7a1a0d{/,null,UNAVAILABLE}
+2016-05-12 07:46:42.909 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 07:46:43.745 [main] INFO  org.reflections.Reflections  - Reflections took 576 ms to scan 2 urls, producing 30 keys and 88 values 
+2016-05-12 07:46:43.942 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 5 modules loaded.
+2016-05-12 07:46:46.416 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2016-05-12 07:46:46.646 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/test-classes/test.properties]
+2016-05-12 07:46:50.331 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:46:50.468 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @11655ms
+2016-05-12 07:46:50.725 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:46:55.932 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@3c5a54b7{/,null,AVAILABLE}
+2016-05-12 07:46:56.008 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@2375b321{HTTP/1.1}{0.0.0.0:39515}
+2016-05-12 07:46:56.013 [main] INFO  org.eclipse.jetty.server.Server  - Started @17209ms
+2016-05-12 07:46:56.070 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@2375b321{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:46:56.092 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@3c5a54b7{/,null,UNAVAILABLE}
+2016-05-12 07:46:56.104 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:46:56.108 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:46:57.599 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@73877e19{/,null,AVAILABLE}
+2016-05-12 07:46:57.604 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@7b208b45{HTTP/1.1}{0.0.0.0:47443}
+2016-05-12 07:46:57.605 [main] INFO  org.eclipse.jetty.server.Server  - Started @18801ms
+2016-05-12 07:46:57.660 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@7b208b45{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:46:57.682 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@73877e19{/,null,UNAVAILABLE}
+2016-05-12 07:46:59.455 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem8334076930355713701.kasutajaliidesedApi
+2016-05-12 07:46:59.466 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
+2016-05-12 07:46:59.467 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
+2016-05-12 07:47:21.268 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - Loading modules annotated with @Module...
+2016-05-12 07:47:22.062 [main] INFO  org.reflections.Reflections  - Reflections took 594 ms to scan 2 urls, producing 29 keys and 85 values 
+2016-05-12 07:47:22.185 [main] INFO  kasutajaliidesedApi.guice.GuiceInjector  - 5 modules loaded.
+2016-05-12 07:47:24.111 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - No custom configuration file set.
+2016-05-12 07:47:24.338 [main] INFO  kasutajaliidesedApi.guice.provider.ConfigurationTestProvider  - Default configuration loaded from [file:/home/mart/Downloads/Kasutajaliidesed-api/target/test-classes/test.properties]
+2016-05-12 07:47:26.882 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:47:26.997 [main] INFO  org.eclipse.jetty.util.log  - Logging initialized @7801ms
+2016-05-12 07:47:27.479 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:47:32.441 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@27ead29e{/,null,AVAILABLE}
+2016-05-12 07:47:32.531 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@27abb83e{HTTP/1.1}{0.0.0.0:40804}
+2016-05-12 07:47:32.533 [main] INFO  org.eclipse.jetty.server.Server  - Started @13358ms
+2016-05-12 07:47:32.620 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@27abb83e{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:47:32.681 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@27ead29e{/,null,UNAVAILABLE}
+2016-05-12 07:47:32.695 [main] INFO  kasutajaliidesedApi.server.EmbeddedJetty  - Starting jetty on port 0
+2016-05-12 07:47:32.702 [main] INFO  org.eclipse.jetty.server.Server  - jetty-9.2.10.v20150310
+2016-05-12 07:47:33.779 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Started o.e.j.s.ServletContextHandler@bb095{/,null,AVAILABLE}
+2016-05-12 07:47:33.783 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Started ServerConnector@777c350f{HTTP/1.1}{0.0.0.0:54684}
+2016-05-12 07:47:33.785 [main] INFO  org.eclipse.jetty.server.Server  - Started @14610ms
+2016-05-12 07:47:33.792 [main] INFO  org.eclipse.jetty.server.ServerConnector  - Stopped ServerConnector@777c350f{HTTP/1.1}{0.0.0.0:0}
+2016-05-12 07:47:33.798 [main] INFO  org.eclipse.jetty.server.handler.ContextHandler  - Stopped o.e.j.s.ServletContextHandler@bb095{/,null,UNAVAILABLE}
+2016-05-12 07:47:34.844 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from /tmp/testFileForGetFileAsStrem5190178896221502316.kasutajaliidesedApi
+2016-05-12 07:47:34.852 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - Getting file from wrong.xml
+2016-05-12 07:47:34.857 [main] INFO  kasutajaliidesedApi.utils.FileUtils  - File wrong.xml does not exist. Trying to load from classpath.
