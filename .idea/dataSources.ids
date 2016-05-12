@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - kasutajaliidesedApi@localhost" uuid="b89e8645-f2d6-4ec0-a04c-6de20e76d28a">
+    <database-info product="MySQL" version="5.6.28-0ubuntu0.15.04.1" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="exact" quoted-identifiers="exact"/>
+    <schema name="" catalog="kasutajaliidesedApi"/>
+    <table name="AuthenticatedUser" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="token" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="AuthenticatedUser_ibfk_1" columns="user_id" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="token" unique="true" columns="token"/>
+    </table>
+    <table name="Grade" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="grade" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="homework_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="Grade_ibfk_1" columns="user_id" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="Grade_ibfk_2" columns="homework_id" ref-table="Homework" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="Homework" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="user" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="added" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="subject_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="Homework_ibfk_1" columns="user" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="Homework_ibfk_2" columns="subject_id" ref-table="Subject" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <exported-key name="Grade_ibfk_2" table="Grade" schema="" catalog="kasutajaliidesedApi" columns="homework_id"/>
+    </table>
+    <table name="Joke" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="joke" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="added" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <column name="user" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5"/>
+      <column name="upvotes" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA=="/>
+      <column name="downvotes" sqlType="BIGINT" precision="19" scale="0" nullable="true" jdbcType="-5" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="Joke_ibfk_1" columns="user" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="Vote_ibfk_2" table="Vote" schema="" catalog="kasutajaliidesedApi" columns="joke_id"/>
+    </table>
+    <table name="Subject" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="Subject_ibfk_1" columns="user_id" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="Homework_ibfk_2" table="Homework" schema="" catalog="kasutajaliidesedApi" columns="subject_id"/>
+      <index name="name" unique="true" columns="name"/>
+    </table>
+    <table name="User" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="code" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="password" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="role" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="created" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="AuthenticatedUser_ibfk_1" table="AuthenticatedUser" schema="" catalog="kasutajaliidesedApi" columns="user_id"/>
+      <exported-key name="Grade_ibfk_1" table="Grade" schema="" catalog="kasutajaliidesedApi" columns="user_id"/>
+      <exported-key name="Homework_ibfk_1" table="Homework" schema="" catalog="kasutajaliidesedApi" columns="user"/>
+      <exported-key name="Joke_ibfk_1" table="Joke" schema="" catalog="kasutajaliidesedApi" columns="user"/>
+      <exported-key name="Subject_ibfk_1" table="Subject" schema="" catalog="kasutajaliidesedApi" columns="user_id"/>
+      <exported-key name="Vote_ibfk_1" table="Vote" schema="" catalog="kasutajaliidesedApi" columns="user_id"/>
+      <index name="code" unique="true" columns="code"/>
+    </table>
+    <table name="Vote" schema="" catalog="kasutajaliidesedApi" type="TABLE">
+      <column name="id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" autoIncrement="true"/>
+      <column name="user_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="joke_id" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5"/>
+      <column name="isUpvote" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="Vote_ibfk_1" columns="user_id" ref-table="User" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <foreign-key name="Vote_ibfk_2" columns="joke_id" ref-table="Joke" ref-schema="" ref-catalog="kasutajaliidesedApi" ref-columns="id" update-rule="3" delete-rule="0" deferrability="2"/>
+      <index name="user_id" unique="true" columns="joke_id,id"/>
+    </table>
+  </data-source>
+</component>

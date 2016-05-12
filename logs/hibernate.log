@@ -1,0 +1,321 @@
+2016-05-12 00:01:15.432 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:01:15.434 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:01:15.435 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:01:16.060 [qtp1975873209-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 00:01:16.785 [qtp1975873209-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 00:01:16.793 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 00:01:16.799 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 00:01:17.996 [qtp1975873209-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 00:01:18.557 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 00:01:18.558 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 00:01:18.558 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 00:01:22.936 [qtp1975873209-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 00:01:22.997 [qtp1975873209-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 00:01:23.755 [qtp1975873209-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 00:01:25.957 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 00:01:25.957 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 00:01:26.044 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 00:01:26.044 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 00:01:26.076 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 00:01:26.077 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 00:01:26.097 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 00:01:26.098 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 00:01:26.119 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 00:01:26.119 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 00:01:26.131 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 00:01:26.132 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 00:01:26.144 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 00:01:26.145 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 00:01:26.167 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 00:01:26.167 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 00:01:27.915 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:01:27.921 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:01:28.171 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [fjc0sdbsab0e7bjgq2th8vs7qu]
+2016-05-12 00:01:28.172 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [fjc0sdbsab0e7bjgq2th8vs7qu]
+2016-05-12 00:01:28.530 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.role=?
+2016-05-12 00:01:28.532 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_, homework0_.added as added2_2_, homework0_.name as name3_2_, homework0_.subject_id as subject_4_2_, homework0_.user as user5_2_ from Homework homework0_
+2016-05-12 00:01:28.543 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [USER]
+2016-05-12 00:01:28.964 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select subject0_.id as id1_4_0_, subject0_.name as name2_4_0_, subject0_.user_id as user_id3_4_0_, user1_.id as id1_5_1_, user1_.code as code2_5_1_, user1_.created as created3_5_1_, user1_.name as name4_5_1_, user1_.password as password5_5_1_, user1_.role as role6_5_1_ from Subject subject0_ left outer join User user1_ on subject0_.user_id=user1_.id where subject0_.id=?
+2016-05-12 00:01:29.000 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2016-05-12 00:01:29.199 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.204 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 00:01:29.204 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.223 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.236 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [5]
+2016-05-12 00:01:29.255 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.256 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2016-05-12 00:01:29.327 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.328 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2016-05-12 00:01:29.356 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.357 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 00:01:29.413 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.414 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [3]
+2016-05-12 00:01:29.431 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_0_, homework0_.added as added2_2_0_, homework0_.name as name3_2_0_, homework0_.subject_id as subject_4_2_0_, homework0_.user as user5_2_0_, subject1_.id as id1_4_1_, subject1_.name as name2_4_1_, subject1_.user_id as user_id3_4_1_, user2_.id as id1_5_2_, user2_.code as code2_5_2_, user2_.created as created3_5_2_, user2_.name as name4_5_2_, user2_.password as password5_5_2_, user2_.role as role6_5_2_, user3_.id as id1_5_3_, user3_.code as code2_5_3_, user3_.created as created3_5_3_, user3_.name as name4_5_3_, user3_.password as password5_5_3_, user3_.role as role6_5_3_ from Homework homework0_ left outer join Subject subject1_ on homework0_.subject_id=subject1_.id left outer join User user2_ on subject1_.user_id=user2_.id left outer join User user3_ on homework0_.user=user3_.id where homework0_.id=?
+2016-05-12 00:01:29.431 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [4]
+2016-05-12 00:01:29.478 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.479 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [4]
+2016-05-12 00:01:29.479 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.513 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.518 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [5]
+2016-05-12 00:01:29.520 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.586 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.587 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [6]
+2016-05-12 00:01:29.588 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.731 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.732 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [7]
+2016-05-12 00:01:29.732 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.810 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.811 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [8]
+2016-05-12 00:01:29.811 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.851 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.855 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [9]
+2016-05-12 00:01:29.856 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.865 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.866 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [10]
+2016-05-12 00:01:29.866 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.921 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.922 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [11]
+2016-05-12 00:01:29.922 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:29.997 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:29.998 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [12]
+2016-05-12 00:01:30.000 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.080 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.081 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [13]
+2016-05-12 00:01:30.081 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.108 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.113 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [14]
+2016-05-12 00:01:30.113 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.206 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.206 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [15]
+2016-05-12 00:01:30.207 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.226 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.227 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [16]
+2016-05-12 00:01:30.227 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.286 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.286 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [17]
+2016-05-12 00:01:30.305 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.311 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.312 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [18]
+2016-05-12 00:01:30.312 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:01:30.318 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select grade0_.id as id1_1_, grade0_.grade as grade2_1_, grade0_.homework_id as homework3_1_, grade0_.user_id as user_id4_1_ from Grade grade0_ cross join Homework homework1_ where grade0_.homework_id=homework1_.id and grade0_.user_id=? and homework1_.subject_id=? order by homework1_.name
+2016-05-12 00:01:30.323 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [19]
+2016-05-12 00:01:30.323 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [1]
+2016-05-12 00:31:32.485 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:31:32.487 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [fjc0sdbsab0e7bjgq2th8vs7qu]
+2016-05-12 00:31:32.518 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_, homework0_.added as added2_2_, homework0_.name as name3_2_, homework0_.subject_id as subject_4_2_, homework0_.user as user5_2_ from Homework homework0_
+2016-05-12 00:31:32.531 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select subject0_.id as id1_4_0_, subject0_.name as name2_4_0_, subject0_.user_id as user_id3_4_0_, user1_.id as id1_5_1_, user1_.code as code2_5_1_, user1_.created as created3_5_1_, user1_.name as name4_5_1_, user1_.password as password5_5_1_, user1_.role as role6_5_1_ from Subject subject0_ left outer join User user1_ on subject0_.user_id=user1_.id where subject0_.id=?
+2016-05-12 00:31:32.532 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2016-05-12 00:43:57.130 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:43:57.130 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:43:57.131 [qtp1975873209-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:43:57.663 [qtp1975873209-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 00:43:58.403 [qtp1975873209-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 00:43:58.432 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 00:43:58.439 [qtp1975873209-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 00:43:59.328 [qtp1975873209-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 00:43:59.558 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 00:43:59.559 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 00:43:59.559 [qtp1975873209-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 00:44:02.074 [qtp1975873209-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 00:44:02.126 [qtp1975873209-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 00:44:02.784 [qtp1975873209-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 00:44:04.143 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 00:44:04.144 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 00:44:04.207 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 00:44:04.207 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 00:44:04.216 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 00:44:04.216 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 00:44:04.224 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 00:44:04.224 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 00:44:04.230 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 00:44:04.230 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 00:44:04.236 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 00:44:04.236 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 00:44:04.243 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 00:44:04.243 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 00:44:04.276 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 00:44:04.276 [qtp1975873209-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 00:44:05.185 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:44:05.190 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:44:05.246 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [fjc0sdbsab0e7bjgq2th8vs7qu]
+2016-05-12 00:44:05.246 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [fjc0sdbsab0e7bjgq2th8vs7qu]
+2016-05-12 00:44:10.292 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 00:44:10.293 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 00:48:55.672 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:48:55.673 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:48:55.673 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:48:56.066 [qtp1975873209-19] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 00:48:56.552 [qtp1975873209-19] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 00:48:56.554 [qtp1975873209-19] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 00:48:56.558 [qtp1975873209-19] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 00:48:57.138 [qtp1975873209-19] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 00:48:57.405 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 00:48:57.406 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 00:48:57.406 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 00:48:59.716 [qtp1975873209-19] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 00:48:59.758 [qtp1975873209-19] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 00:49:00.386 [qtp1975873209-19] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 00:49:01.736 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 00:49:01.736 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 00:49:01.812 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 00:49:01.813 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 00:49:01.820 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 00:49:01.820 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 00:49:01.832 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 00:49:01.832 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 00:49:01.843 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 00:49:01.843 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 00:49:01.875 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 00:49:01.875 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 00:49:01.893 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 00:49:01.893 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 00:49:01.902 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 00:49:01.902 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 00:49:02.862 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 00:49:02.924 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 00:49:03.251 [qtp1975873209-19] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (token, user_id) values (?, ?)
+2016-05-12 00:49:03.256 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [162ih0p6iqdm59argu55g2gai5]
+2016-05-12 00:49:03.257 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [2]
+2016-05-12 00:51:46.870 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 00:51:46.873 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 00:51:47.038 [qtp1975873209-20] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (token, user_id) values (?, ?)
+2016-05-12 00:51:47.039 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 00:51:47.039 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [2]
+2016-05-12 00:51:47.428 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:51:47.429 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 00:51:47.431 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 00:51:47.433 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 00:51:47.460 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_, homework0_.added as added2_2_, homework0_.name as name3_2_, homework0_.subject_id as subject_4_2_, homework0_.user as user5_2_ from Homework homework0_ where homework0_.user=?
+2016-05-12 00:51:47.476 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 00:53:30.868 [qtp1975873209-22] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:53:30.869 [qtp1975873209-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 00:54:41.746 [qtp1578587450-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:54:41.747 [qtp1578587450-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:54:41.747 [qtp1578587450-18] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:54:41.952 [qtp1578587450-18] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 00:54:42.321 [qtp1578587450-18] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 00:54:42.326 [qtp1578587450-18] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 00:54:42.329 [qtp1578587450-18] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 00:54:42.802 [qtp1578587450-18] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 00:54:42.925 [qtp1578587450-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 00:54:42.926 [qtp1578587450-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 00:54:42.926 [qtp1578587450-18] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 00:54:44.261 [qtp1578587450-18] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 00:54:44.336 [qtp1578587450-18] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 00:54:45.378 [qtp1578587450-18] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 00:54:48.007 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 00:54:48.008 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 00:54:48.081 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 00:54:48.081 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 00:54:48.095 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 00:54:48.095 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 00:54:48.107 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 00:54:48.107 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 00:54:48.121 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 00:54:48.121 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 00:54:48.131 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 00:54:48.131 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 00:54:48.142 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 00:54:48.143 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 00:54:48.154 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 00:54:48.154 [qtp1578587450-18] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 00:54:49.118 [qtp1578587450-18] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:54:49.293 [qtp1578587450-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 00:55:33.345 [qtp1578587450-20] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:55:33.349 [qtp1578587450-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 00:58:07.542 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:58:07.544 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:58:07.544 [qtp1975873209-19] WARN  org.hibernate.ejb.HibernatePersistence  - HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
+2016-05-12 00:58:07.906 [qtp1975873209-19] INFO  org.hibernate.jpa.internal.util.LogHelper  - HHH000204: Processing PersistenceUnitInfo [
+	name: kasutajaliidesedApi
+	...]
+2016-05-12 00:58:08.453 [qtp1975873209-19] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.10.Final}
+2016-05-12 00:58:08.459 [qtp1975873209-19] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2016-05-12 00:58:08.464 [qtp1975873209-19] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2016-05-12 00:58:09.086 [qtp1975873209-19] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2016-05-12 00:58:09.242 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://127.0.0.1/kasutajaliidesedApi
+2016-05-12 00:58:09.242 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000046: Connection properties: {user=root, password=****}
+2016-05-12 00:58:09.242 [qtp1975873209-19] INFO  org.hibernate.c3p0.internal.C3P0ConnectionProvider  - HHH000006: Autocommit mode: false
+2016-05-12 00:58:12.224 [qtp1975873209-19] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2016-05-12 00:58:12.328 [qtp1975873209-19] INFO  org.hibernate.engine.jdbc.internal.LobCreatorBuilder  - HHH000424: Disabling contextual LOB creation as createClob() method threw error : java.lang.reflect.InvocationTargetException
+2016-05-12 00:58:13.476 [qtp1975873209-19] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2016-05-12 00:58:15.127 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000229: Running schema validator
+2016-05-12 00:58:15.128 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.SchemaValidator  - HHH000102: Fetching database metadata
+2016-05-12 00:58:15.212 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.AuthenticatedUser
+2016-05-12 00:58:15.213 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, id, token]
+2016-05-12 00:58:15.235 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Grade
+2016-05-12 00:58:15.235 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, grade, homework_id, id]
+2016-05-12 00:58:15.247 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Homework
+2016-05-12 00:58:15.248 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [subject_id, added, name, id, user]
+2016-05-12 00:58:15.261 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Joke
+2016-05-12 00:58:15.262 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [upvotes, added, id, downvotes, user, joke]
+2016-05-12 00:58:15.272 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Subject
+2016-05-12 00:58:15.272 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, name, id]
+2016-05-12 00:58:15.305 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.User
+2016-05-12 00:58:15.305 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [password, code, role, created, name, id]
+2016-05-12 00:58:15.326 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000261: Table found: kasutajaliidesedApi.Vote
+2016-05-12 00:58:15.327 [qtp1975873209-19] INFO  org.hibernate.tool.hbm2ddl.TableMetadata  - HHH000037: Columns: [user_id, joke_id, id, isupvote]
+2016-05-12 00:58:16.525 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 00:58:16.602 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 01:03:08.575 [qtp1975873209-18] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:03:08.609 [qtp1975873209-18] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 01:03:08.627 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:03:08.628 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [6nr45om9k4c3d1t382kcgeprgo]
+2016-05-12 01:03:09.006 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 01:03:09.008 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 01:03:09.637 [qtp1975873209-20] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (token, user_id) values (?, ?)
+2016-05-12 01:03:09.641 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:03:09.642 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [2]
+2016-05-12 01:03:10.302 [qtp1975873209-33] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:03:10.309 [qtp1975873209-33] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:03:10.314 [qtp1975873209-33] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 01:03:10.316 [qtp1975873209-33] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:01.092 [qtp1975873209-33] DEBUG org.hibernate.SQL  - select homework0_.id as id1_2_, homework0_.added as added2_2_, homework0_.name as name3_2_, homework0_.subject_id as subject_4_2_, homework0_.user as user5_2_ from Homework homework0_ where homework0_.user=?
+2016-05-12 01:05:01.094 [qtp1975873209-33] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:01.191 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:05:01.192 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:05:01.201 [qtp1975873209-20] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 01:05:01.203 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:01.247 [qtp1975873209-33] DEBUG org.hibernate.SQL  - select subject0_.id as id1_4_0_, subject0_.name as name2_4_0_, subject0_.user_id as user_id3_4_0_, user1_.id as id1_5_1_, user1_.code as code2_5_1_, user1_.created as created3_5_1_, user1_.name as name4_5_1_, user1_.password as password5_5_1_, user1_.role as role6_5_1_ from Subject subject0_ left outer join User user1_ on subject0_.user_id=user1_.id where subject0_.id=?
+2016-05-12 01:05:01.249 [qtp1975873209-33] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [1]
+2016-05-12 01:05:01.280 [qtp1975873209-22] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:05:01.285 [qtp1975873209-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:05:01.298 [qtp1975873209-22] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 01:05:01.325 [qtp1975873209-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:09.960 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:05:10.065 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:05:10.063 [qtp1975873209-34] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 01:05:13.280 [qtp1975873209-34] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 01:05:13.280 [qtp1975873209-35] DEBUG org.hibernate.SQL  - select authentica0_.id as id1_0_, authentica0_.token as token2_0_, authentica0_.user_id as user_id3_0_ from AuthenticatedUser authentica0_ where authentica0_.token=?
+2016-05-12 01:05:13.282 [qtp1975873209-35] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [q3fln6or3hmt9nq9mp3hkc6rgn]
+2016-05-12 01:05:13.204 [qtp1975873209-21] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 01:05:13.289 [qtp1975873209-35] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_0_, user0_.code as code2_5_0_, user0_.created as created3_5_0_, user0_.name as name4_5_0_, user0_.password as password5_5_0_, user0_.role as role6_5_0_ from User user0_ where user0_.id=?
+2016-05-12 01:05:13.332 [qtp1975873209-35] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:13.333 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:21.553 [qtp1975873209-19] DEBUG org.hibernate.SQL  - select user0_.id as id1_5_, user0_.code as code2_5_, user0_.created as created3_5_, user0_.name as name4_5_, user0_.password as password5_5_, user0_.role as role6_5_ from User user0_ where user0_.code=?
+2016-05-12 01:05:50.808 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [123875]
+2016-05-12 01:05:50.837 [qtp1975873209-22] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2016-05-12 01:05:50.838 [qtp1975873209-21] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2016-05-12 01:05:50.839 [qtp1975873209-20] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2016-05-12 01:05:50.840 [qtp1975873209-35] DEBUG org.hibernate.SQL  - delete from AuthenticatedUser where id=?
+2016-05-12 01:05:50.841 [qtp1975873209-21] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:50.841 [qtp1975873209-22] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:50.842 [qtp1975873209-20] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:50.855 [qtp1975873209-35] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [BIGINT] - [2]
+2016-05-12 01:05:50.871 [qtp1975873209-22] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-12 01:05:50.893 [qtp1975873209-35] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-12 01:05:50.948 [qtp1975873209-20] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2016-05-12 01:05:51.322 [qtp1975873209-34] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (token, user_id) values (?, ?)
+2016-05-12 01:05:51.323 [qtp1975873209-34] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [am64soe8eld66sf0hh1t3tk51m]
+2016-05-12 01:05:51.323 [qtp1975873209-34] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [2]
+2016-05-12 01:05:51.380 [qtp1975873209-19] DEBUG org.hibernate.SQL  - insert into AuthenticatedUser (token, user_id) values (?, ?)
+2016-05-12 01:05:51.383 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [1] as [VARCHAR] - [t9fdkig34ete3h3pavbk4dgo4f]
+2016-05-12 01:05:51.384 [qtp1975873209-19] TRACE org.hibernate.type.descriptor.sql.BasicBinder  - binding parameter [2] as [BIGINT] - [2]

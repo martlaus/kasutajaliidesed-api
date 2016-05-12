@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - kasutajaliidesedApi@localhost" uuid="b89e8645-f2d6-4ec0-a04c-6de20e76d28a">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <schema-pattern>kasutajaliidesedApi.*</schema-pattern>
+      <default-schemas>kasutajaliidesedApi.*</default-schemas>
+    </data-source>
+  </component>
+</project>
