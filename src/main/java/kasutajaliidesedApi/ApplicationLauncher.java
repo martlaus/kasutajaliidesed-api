@@ -15,7 +15,7 @@ import static java.lang.String.format;
 @Singleton
 public class ApplicationLauncher {
 
-    private static final Logger logger = LoggerFactory.getLogger(ApplicationLauncher.class);
+//    private static final Logger logger = LoggerFactory.getLogger(ApplicationLauncher.class);
 
     private static final int DEFAULT_SERVER_PORT = 8875;
 
@@ -27,7 +27,7 @@ public class ApplicationLauncher {
         GuiceInjector.init();
 
         if (ApplicationManager.isApplicationRunning()) {
-            logger.warn("Unable to start. Application is already running.");
+        //    logger.warn("Unable to start. Application is already running.");
         } else {
             startServer();
             addShutdownHook();
@@ -54,20 +54,20 @@ public class ApplicationLauncher {
     private static void startServer() {
         try {
             int port = configuration.getInt(ConfigurationProperties.SERVER_PORT, DEFAULT_SERVER_PORT);
-            logger.info(format("Starting application server on port [%s]", port));
+          //  logger.info(format("Starting application server on port [%s]", port));
             EmbeddedJetty.instance().start(port);
         } catch (Exception e) {
-            logger.error("Error inicializing Jetty Server. Existing application.", e);
+           // logger.error("Error inicializing Jetty Server. Existing application.", e);
             System.exit(1);
         }
     }
 
     synchronized private static void stopServer() {
-        logger.info("Stopping server...");
+       // logger.info("Stopping server...");
         try {
             EmbeddedJetty.instance().stop();
         } catch (Exception e) {
-            logger.info("Error stopping server!", e);
+           // logger.info("Error stopping server!", e);
         }
     }
 
@@ -82,7 +82,7 @@ public class ApplicationLauncher {
         } else if ("stop".equalsIgnoreCase(args[0])) {
             stopApplication();
         } else {
-            logger.warn("Command does not exist. Use: start, stop or no command (default is start).");
+         //   logger.warn("Command does not exist. Use: start, stop or no command (default is start).");
         }
     }
 }
